@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        array=[1,2,3,4]
+        let [x,y,z]=array
+        console.log("x: "+x+" y: "+y+" z: "+z)
+        student={
+            firstName:"neel",
+            lastName:"yadav",
+            class:"b1",
+            rollno:301
+        }
+        let {firstName,...c}=student
+        console.log(student.firstName,c.lastName);
+        
+    </script>
+</body>
+</html>

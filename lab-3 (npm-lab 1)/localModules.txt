@@ -1,0 +1,7 @@
+
+cors
+express
+nodemon
+jsonwebtoken
+multer
+mongoose

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1=parseInt(prompt("Enter starting range: "));
+        let n2=parseInt(prompt("Enter ending range: "));
+        for(i=n1;i<=n2;i++){
+            flag=1;
+            for(j=2;j<i;j++){
+                if(i%j==0){
+                    flag=0;
+                    break;
+                }
+            }
+            if(flag==1){
+                document.write(i+",");
+            }
+        }
+    </script>
+</body>
+</html>

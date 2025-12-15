@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="btn">
+    <h1 id="abc"></h1>
+    <script>
+        document.getElementById("btn").addEventListener("mousedown", function (event) {
+            if (event.button === 0) {
+                this.style.backgroundColor = "left click";
+            } else if (event.button === 2) {
+                this.style.backgroundColor = "right click";
+            }
+        });
+
+        // Disable right-click menu
+        document.addEventListener("contextmenu", e => e.preventDefault());
+    </script>
+
+</body>
+
+</html>
